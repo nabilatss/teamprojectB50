@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba</title>
+  <link rel="stylesheet" href="responsive.css">
+<!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display|Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+</head>
+<style>
+ /* Tulis CSS nya disini */
+* {
+  box-sizing: border-box;
+}
+  
+ body {
+ 	font-family: arial;
+ }
+a {
+  text-decoration: none;
+}
+ 
+.clear {
+  clear: left;
+}
+  div {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+	background-color: rgba(114, 91, 59, 0.8);
+  color: #f75d09;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:10;
+}
+
+.love-icon {
+	height: 80px;
+  width: 80px;
+  float: left;
+}
+  
+  
+.boba-icon {
+	height: 60px;
+  width: 60px;
+  float: right;
+  padding: 10px;
+}
+
+.header-logo {
+  padding: 20px 20px;
+  font-size: 36px;
+  float: left;
+  letter-spacing:5px;
+  color:#ffdac8;
+}
+
+.header-list li {
+  margin: 15px 30px;
+  font-size: 20px;
+  float: left;
+  list-style: none;
+  letter-spacing: 1px;
+  font-family: "Courier New";
+  background-color: rgba(232, 179, 117, 0.5);
+  display: block;
+  border: 2px solid #ffdac8;
+  text-align: center;
+  transition: all 0.5s;
+}
+ 
+.header-list:hover {
+  opacity: 1;
+  color: red;
+}
+  
+.main {
+	margin-top: 180px;
+  margin-bottom:40px;
+  margin-right:80px;
+  margin-left:80px;
+  text-align: justify;
+  line-height:1.5
+}
+  
+.title h1 {
+	text-align:center;
+  font-weight:normal;
+  border-bottom:3px solid #DBDBDB;
+  font-size:25px
+}
+  
+.heading h2 {
+	text-align:center;
+  font-weight:normal;
+  border-bottom:3px solid #DBDBDB;
+  margin-top:50px
+}
+  
+.btn-boba {
+	padding:12px 24px;
+  display:inline-block;
+  opacity:0.8;
+  background-color:#d2a691;
+  color:white;
+  border-radius:4px;
+  cursor:pointer;
+  box-shadow:0 7px #b08774;
+  font-size:10px
+}
+  
+.btn-boba:active {
+  box-shadow:none;
+  position:relative;
+  top:7px;
+}
+
+.btn-boba:hover {
+	opacity:1
+}
+  
+.menu {
+	float:left;
+  width:25%
+}
+  
+.menu-wrapper {
+	text-align:center;
+}  
+.menu-icon {
+	position:relative;
+}
+
+.menu-icon p {
+  position:absolute;
+  top:70px;
+  width:100%;
+  color:white;
+  text-align:center;
+  font-size:15px;
+}
+
+.menu-icon img {
+	width: 60%;
+  height:30%
+}
+  .content h2 {
+  	font-family: "Playfair Display", Arial;
+  }
+  
+.content {
+  float: left;
+  width: 33%;
+}
+
+.content-image {
+  position: relative;
+}
+
+.content-image p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #c25b3b;
+}
+  
+.footer {
+	height:100px;
+  width:100%;
+  background-color:#ffdac8;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.container h1 {
+	font-family: "Abril Fatface",Arial;
+}
+
+.footer-logo b {
+  font-size: 15px;
+  float: left;
+  letter-spacing:1px;
+  color:#c25b3b;
+}
+
+.footer-logo {
+	float:left;
+  padding:right:50px;
+}
+  
+.footer-list{
+	float:right;
+  color:#c25b3b;
+  margin-bottom:50px
+}
+
+.footer-list p {
+ font-size: 22px;
+ color:#c25b3b;
+}
+.footer-list li {
+	list-style:none;
+  font-size:15px;
+}
+  
+.social-media {
+	margin:0 auto;
+  padding: 20px 0;
+}
+.social-media p {
+	color:#c25b3b;
+  
+}
+  
+.btn {
+	width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  line-height: 34px;
+  color: #fff;
+  display:inline-block;
+  opacity: 0.7;
+  font-size:30px;
+}
+
+.btn:hover {
+	opacity:1;
+}
+
+.facebook {
+	background-color:#3b5998;
+}
+
+.twitter {
+ background-color: #55acee;
+}
+  
+.youtube {
+	background-color: red;
+}
+
+.instagram {
+	background-color: #c13854;
+}
+
+.@media (max-width: 1000px) {
+	.item {
+  width:50%;
+  margin-bottom:50px;
+  }
+  .flex-list {
+    flex-wrap: wrap;
+  }
+  .flex-list li {
+    width: 50%;
+  }
+} 
+  
+@media (max-width: 670px) {
+	.item {
+  width:25%;
+  }
+  .lesson {
+    width:100%;
+  }
+  .footer {
+  	text-align:center;
+  }
+  .btn {
+  	width:100%;
+  }
+  
+}
+ </style>
+<body>
+    <!-- Header (Tora) -->
+ 		<div class="header">
+      <img class="boba-icon" src="https://www.pinclipart.com/picdir/big/141-1413461_you-love-gif-love-clipart.png">
+      <img class="love-icon" src="https://media2.giphy.com/media/Ti6oh7ssrqFeXXHg2q/source.gif">
+      <div class="header-logo"><b>Boba Lovers</b></div>
+      <div class="header-list">
+        <ul>
+          <li><a href="https://google.com" style="color:white"><b>HOME</b></a></li>
+          <li><a href="#" style="color:white"><b>ABOUT</b></a></li>
+          <li><a href="#" style="color:white"><b>FOODS</b></a></li>
+          <li><a href="#"style="color:white"><b>DRINKS</b></a></li>
+          <li><a href="#" style="color:white"><b>HIGHLIGHTS</b></a></li>
+        </ul>
+      </div>
+    </div>
+  
+  
+  
+  <!-- Main (Nabila)-->
+  <div class="main">
+    <div class="heading-main">
+    <div class="title"><h1>Jakarta's Best<br>Boba</h1></div>
+    <div class="description">
+    <p>Bubble tea (also known as pearl milk tea, bubble milk tea, or boba) is a Taiwanese tea-based drink invented in Tainan and Taichung in the 1980s.[1] Recipes contain tea of some kind, flavors of milk, and sugar (optional). Toppings, such as chewy tapioca balls (also known as pearls or boba), popping boba, fruit jelly, grass jelly, agar jelly, and puddings are often added. Ice-blended versions are frozen and put into a blender, resulting in a slushy consistency.[2] There are many varieties of the drink with a wide range of flavors.(<a href="https://en.wikipedia.org/wiki/Bubble_tea" target="_blank">Source: wikipedia</a>)
+    </p>
+      
+    </div>
+    </div>
+  </div>
+  
+  <div class="menu-wrapper">
+    <div class="container-boba">
+      <div class="btn-boba">
+        <a href="#" class="btn try">Try!</a>
+      </div>
+      <div class="heading">
+        <h2>Most Popular Choices</h2>
+      </div>
+      <div class="menus">
+        <div class="menu">
+          <div class="menu-icon">
+         <img src="https://prog-8.com/images/html/advanced/html.png">
+          <p>Black Pearl Milk Tea</p>
+        </div>
+        <p class="txt-boba"></p>
+      </div>
+      <div class="menus">
+        <div class="menu">
+          <div class="menu-icon">
+       <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+            <p>Green Pearl Milk Tea</p>
+          </div>
+          <p class="txt-boba"></p>
+        </div>
+        </div>
+        <div class="menus">
+        <div class="menu">
+          <div class="menu-icon">
+       <img src="https://prog-8.com/images/html/advanced/ruby.png">
+            <p>Fresh Milk Boba</p>
+          </div>
+          <p class="txt-boba"></p>
+        </div>
+        </div>
+        <div class="menus">
+        <div class="menu">
+          <div class="menu-icon">
+       <img src="https://prog-8.com/images/html/advanced/php.png">
+            <p>Caramel Milk Tea</p>
+          </div>
+          <p class="txt-boba"></p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Main tambahan (Shafira) -->
+<div class="content-wrapper">
+<div class="container">
+  <h1>Review</h1>         
+ <div class="contents">
+   
+ <!--onezo-->
+ 	<div class="content">
+   <h2>Onezo</h2>
+  <div class="content-image">
+    <img src="https://1.bp.blogspot.com/-SIwVNbyz6eg/XLYXORUcmRI/AAAAAAABfxE/mfN9KbRvBAMp8p5ei1LmJnutWbPU7PHfQCEwYBhgL/s1600/ONEZOi.jpg" alt="Onezo" width="25%"/>
+   </div>
+   <p class="txt-contents">AEON Mall BSD, Mall of Indonesia, Ketapang Business Center</p>
+    <ul class="rate">
+        <li>Milk: 3/5</li>
+        <li>Brown sugar: 4.5/5</li>
+        <li>Boba: 4.5/5</li>
+    </ul>   
+ <p class="score">Score: 4</p>
+   </div>
+ <!--xingfutang-->
+   
+<div class="content">
+   <h2>Xing Fu Tang</h2>
+  <div class="content-image">
+    <img src="https://sethlui.com/wp-content/uploads/2019/05/xing-fu-tang-singapore-june-2019-online-5.jpg" alt="Xing Fu Tang" width="25%"/>   </div>
+   <p class="txt-contents">Lippo Mall Puri</p>
+    <ul class="rate">
+            <li>Milk: 3/5</li>
+            <li>Brown sugar: 4/5</li>
+            <li>Boba: 4/5</li>
+    </ul> 
+ <p class="score">Score: 3.83</p>
+   </div>
+   
+   
+ <!--kokumi-->  
+   <div class="content">
+   <h2>Kokumi</h2>
+  <div class="content-image">
+    <img src ="https://b.zmtcdn.com/data/pictures/chains/4/18781104/786304c7288fe9f226336ade1c9ee5b9_featured_v2.jpg" width="25%" alt="Kokumi"/>   </div>
+   <p class="txt-contents">Senayan City, Greenlake, Mayapada Tower, Mall Taman Anggrek, Puri Indah Mall, Mall Kelapa Gading, PIK Avenue</p>
+    <ul class="rate">
+            <li>Milk: 4/5 </li>
+            <li>Brown sugar: 3/5</li>
+            <li>Boba: 2/5</li>
+    </ul>
+ <p class="score">Score: 3</p>
+   </div>
+ 
+
+<!--tigersugar-->
+   <div class="content">
+   <h2>Tiger Sugar</h2>
+  <div class="content-image">
+    <img src ="https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/10/09/nz-bubbletea-091019.jpg?itok=24L0kqFn&timestamp=1539070627" width="25%" alt="Tiger Sugar"/>
+  </div>
+   <p class="txt-contents">Mall Kelapa Gading 2</p>
+    <ul class="rate">
+            <li>Milk: 2/5</li>
+            <li>Brown sugar: 4.5/5</li>
+            <li>Boba: 4/5</li>
+    </ul>
+ <p class="score">Score: 3.5</p>
+   </div>
+   
+<!--chatime-->
+   <div class="content">
+   <h2>Chatime</h2>
+  <div class="content-image">
+    <img src ="https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/10/09/nz-bubbletea-091019.jpg?itok=24L0kqFn&timestamp=1539070627" width="25%" alt="CHATIME"/>
+  </div>
+   <p class="txt-contents">105 outlets in Jakarta</p>
+    <ul class="rate">
+            <li>Milk: 2/5</li>
+            <li>Brown sugar: 1/5</li>
+            <li>Boba: 3.5/5</li>
+    </ul>
+ <p class="score">Score: 2.17</p>
+   </div>
+   
+<!--koi the -->
+       <div class="content">
+   <h2>Koi The</h2>
+  <div class="content-image">
+        <img src ="https://www.8days.sg/image/11007772/3x4/1440/1920/62d6bc99c26aad928bf4f75ffd545434/eJ/koi-th%C3%A9.jpg" alt="Koi" width="25%"/>  </div>
+   <p class="txt-contents">15 outlets in Jakarta</p>
+    <ul class="rate">
+               <li>Milk: 2/5</li>
+                <li>Brown sugar: 0/5</li>
+                <li>Boba: 2/5</li>
+    </ul>
+ <p class="score">Score: 1.3</p>
+   </div>
+   
+  </div></div></div> </div>
+
+  <!-- Footer (Nurry)-->
+  
+<div class="footer">
+    <div class="footer-logo">
+      <img class="love-icon" src="https://media2.giphy.com/media/Ti6oh7ssrqFeXXHg2q/source.gif">
+      <b>Boba Lovers</b>
+    </div>
+    <div class="footer-list">
+      <p>More</p>
+    	<ul>
+    		<li><a href="#">All About Boba</a></li>
+        <li><a href="#">Highlights</a></li>
+    	</ul>
+    </div>
+    <div class="social-media">
+      <p>Follow Us!</p>
+      <a href="#" class="btn facebook"><span class="fa fa-facebook"></span></a>
+      <a href="#" class="btn twitter"><span class="fa fa-twitter"></span></a>
+      <a href="#" class="btn youtube"><span class="fa fa-youtube"></span></a>
+      <a href="#" class="btn instagram"><span class="fa fa-instagram"></span></a>
+      
+    </div>
+    
+  </div>
+</div>
+  
+</body>
+
+</html>
